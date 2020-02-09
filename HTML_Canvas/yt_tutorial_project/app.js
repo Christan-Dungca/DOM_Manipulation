@@ -60,3 +60,22 @@ for (var i = 0; i < 30; i++) {
         [Math.floor(Math.random() * circleColors.length)];
     c.stroke();
 }
+
+// c.fillStyle = 'rgba(255,106,106, .8)';
+// c.fillRect(500, 500, 500, 500);
+
+// c.beginPath();
+// c.moveTo(0, 500);
+// c.lineTo(250, 500);
+// c.lineTo(250, 750);
+// c.lineTo(500, 750);
+// c.strokeStyle = 'red';
+// c.stroke();
+
+// c.beginPath();
+// c.arc(800, 800, 150, 0, 2 * Math.PI, false);
+// c.strokeStyle = "yellow";
+// c.stroke();
+
+// console.log(canvas);
+// console.log(c);
