@@ -7,18 +7,11 @@ var dom = {
 // getting the canvas element from html file
 var canvas = document.querySelector(dom.canvas);
 
-// setting styles to the canvas element
-// canvas.setAttribute('style', 'background : grey;');
-
-
 // making the canvas element always equal to width of viewport/window
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-
-
 // .getContext() method returns a drawing context on the canvas (c usually stands for context)
-
 var c = canvas.getContext('2d'); 
 
 // creates new object, position relative to canvas container
@@ -44,5 +37,26 @@ c.lineTo(1000, 50);
 c.strokeStyle = "orangered";
 c.stroke();
 
+// Arc / Circle 
+// c.arc(x: Int, y: Int, r: Int, 
+        // startAngle: Float, endAngle: Float, 
+        // drawCounterClockwise: bool (false))
 
-console.log(canvas, c);
+// c.beginPath();
+// c.arc(300, 300, 30, 0, Math.PI * 2, false);
+// c.strokeStyle = 'black';
+// c.stroke();
+
+for (var i = 0; i < 30; i++) {
+
+    var x = Math.random() * window.innerWidth;
+    var y = Math.random() * window.innerHeight;
+
+    var circleColors = ['black', 'teal ', 'orange'];
+
+    c.beginPath();
+    c.arc(x, y, 30, 0, Math.PI * 2, false);
+    c.strokeStyle = circleColors
+        [Math.floor(Math.random() * circleColors.length)];
+    c.stroke();
+}
