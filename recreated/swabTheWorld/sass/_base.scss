@@ -1,0 +1,30 @@
+
+// variables 
+
+:root {
+    --color-primary: #f9ae65;
+    --color-secondary: #3c6d79;
+
+    --color-dark-blue: #5e62d1;
+    --color-light-blue: #5fecc8;
+
+    --color-light-grey: #e0e2ee;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    
+}
