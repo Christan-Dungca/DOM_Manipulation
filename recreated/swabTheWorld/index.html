@@ -10,12 +10,102 @@
 <body>
     <div class="container">
 
+        <!-- navigation button animation trick full css  -->
+        <div class="navigation-container">
+            <div class="navigation">
+                <!-- invisible element that we will use to check the state --> 
+                
+                <input type="checkbox" id="navi-toggle" class="navigation__checkbox">
+                
+                <label for="navi-toggle" class="navigation__button">
+                    <span class="navigation__icon"> &nbsp; </span>
+                </label>
+                
+                <div class="navigation__background"></div>
+                
+                <div class="navigation__user-settings">
+                    <p class="navigation__user-settings__text">
+                        <span class="underline"> Log In </span> or <span class="underline"> Create a Profile </span>
+                    </p>        
+                </div>
+                
+                <div class="line line--top"></div>
+
+                <h2 class="navigation__heading"> swab the world </h2>
+                
+                <div class="navigation__nav">
+
+    
+                    <ul class="navigation__list">
+    
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">
+                                about us
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">
+                                blog 
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">
+                                conferences
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">
+                                become a donor
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">
+                                donor stories
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">
+                                patients and surveys
+                            </a>
+                        </li>
+                        <li class="navigation__item">
+                            <a href="#" class="navigation__link">
+                                support our misson
+                            </a>
+                        </li>
+    
+                    </ul>
+                
+                </div>
+    
+                <div class="line line--bottom"></div>
+    
+                <div class="navigation__footer">
+                    <ul class="navigation__footer__list">
+                        <li class="navigation__footer__item">
+                            faq
+                        </li>
+                        <li class="navigation__footer__item">
+                            media
+                        </li>
+                        <li class="navigation__footer__item">
+                            sponsors
+                        </li>
+                        <li class="navigation__footer__item">
+                            contact
+                        </li>
+                    </ul>
+                </div>  
+                
+            </div>
+        </div>
+
         <!-- navigation button -->
-        <button class="btn">
+        <!-- <button class="btn">
             <div class="btn__container">
                 <div class="btn__line"></div>
             </div>
-        </button>
+        </button> -->
 
         <!-- section landing page -->
         <section class="landing-page">
@@ -28,8 +118,10 @@
                     <h2 class="nav__logo"> swab 
                         <span class="nav__logo--the"> the </span>  
                         <span class="nav__logo--bottom"> world </span> 
+                    </h2> 
+                    <h2 class="nav__link"> 
+                        <a> Support our mission </a>
                     </h2>
-                    <h2 class="nav__link"> Support our mission</h2>
                 </nav>
 
                  <!-- Main Heading  -->
