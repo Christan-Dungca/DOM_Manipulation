@@ -1,0 +1,72 @@
+// VIDEO CONTAINER, BACKGROUND VIDEO, VIDEO SHADER
+
+.video-container,
+.video-shader {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0; 
+}
+
+
+.video-container {
+    z-index: -2;
+
+    &__bg-video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; 
+    }
+    
+}
+
+.video-shader{
+    z-index: -1; 
+    background-color: rgba(#000, .35);  
+}
+
+// TOP NAVIGATOIN LINKS 
+
+.links {
+    
+    background-color: slateblue;
+    grid-column: 1 / -1; 
+
+    &__about {
+
+        &--text,
+        &--text:active {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    
+    &__social {
+
+        &--face,
+        &--face:active {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        &--vim,
+        &--vim:active {
+            color: #fff;
+            text-decoration: none;
+             
+        }
+    }
+
+}
+
+.main {
+    background-color: salmon;
+
+    grid-column: 1 / -1; 
+}
+
+.footer {
+    background-color: tomato;
+    grid-column: 1 / -1; 
+}

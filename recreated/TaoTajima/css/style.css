@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'EB Garamond';
+  font-weight: 400;
+  color: #fff; }
+
+.video-container,
+.video-shader {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0; }
+
+.video-container {
+  z-index: -2; }
+  .video-container__bg-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
+.video-shader {
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.35); }
+
+.links {
+  background-color: slateblue;
+  grid-column: 1 / -1; }
+  .links__about--text, .links__about--text:active {
+    color: #fff;
+    text-decoration: none; }
+  .links__social--face, .links__social--face:active {
+    color: #fff;
+    text-decoration: none; }
+  .links__social--vim, .links__social--vim:active {
+    color: #fff;
+    text-decoration: none; }
+
+.main {
+  background-color: salmon;
+  grid-column: 1 / -1; }
+
+.footer {
+  background-color: tomato;
+  grid-column: 1 / -1; }
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr); }
