@@ -31,27 +31,72 @@ body {
 
 .video-shader {
   z-index: -1;
-  background-color: rgba(0, 0, 0, 0.35); }
+  background-color: rgba(0, 0, 0, 0.4); }
 
 .links {
-  background-color: slateblue;
-  grid-column: 1 / -1; }
-  .links__about--text, .links__about--text:active {
-    color: #fff;
-    text-decoration: none; }
-  .links__social--face, .links__social--face:active {
-    color: #fff;
-    text-decoration: none; }
-  .links__social--vim, .links__social--vim:active {
-    color: #fff;
-    text-decoration: none; }
+  grid-column: 1 / -1;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  font-size: 1.1rem;
+  letter-spacing: 2px; }
+  .links__about {
+    justify-self: start; }
+    .links__about--text, .links__about--text:active {
+      color: #fff;
+      text-decoration: none; }
+    .links__about--text:hover {
+      text-decoration: underline; }
+  .links__social {
+    text-transform: lowercase;
+    justify-self: end; }
+    .links__social--face, .links__social--face:active {
+      color: #fff;
+      text-decoration: none; }
+    .links__social--vim, .links__social--vim:active {
+      color: #fff;
+      text-decoration: none; }
 
 .main {
-  background-color: salmon;
-  grid-column: 1 / -1; }
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center; }
+
+.navigation {
+  position: absolute; }
+
+.header {
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  grid-template-rows: repeat(3, max-content);
+  grid-template-columns: max-content; }
+  .header__job-title {
+    justify-self: start;
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+    font-size: 1.8rem;
+    letter-spacing: 1.3rem;
+    font-weight: 500; }
+  .header__name {
+    grid-row: 2 / 3;
+    grid-column: 1 / -1;
+    font-size: 3.8rem;
+    letter-spacing: 5.5rem; }
+  .header__company {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    justify-self: end;
+    margin-right: 5.5rem; }
 
 .footer {
-  background-color: tomato;
   grid-column: 1 / -1; }
 
 .container {
