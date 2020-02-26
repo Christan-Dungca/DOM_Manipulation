@@ -23,7 +23,7 @@
 
 .video-shader{
     z-index: -1; 
-    background-color: rgba(#000, .4);     
+    background-color: rgba(#000, .4);      
 }
 
 // TOP NAVIGATOIN LINKS 
@@ -33,8 +33,8 @@
     // background-color: slateblue;
     grid-column: 1 / -1; 
 
-    padding: 1.5rem;  
-    display: grid;  
+    padding: 2.8rem;    
+    display: grid;   
     grid-template-columns: 1fr 1fr; 
     align-items: start;   
 
@@ -78,14 +78,16 @@
 }
 
 .main {
-    // background-color: salmon;
+    // background-color: salmon; 
 
     grid-row: 2 / 3; 
     grid-column: 1 / -1; 
 
     display: grid; 
     grid-template-columns: 1fr;  
-    align-items: center; 
+
+    justify-content: center;
+    align-content: center;  
 }
 
 .navigation{
@@ -97,14 +99,16 @@
     grid-row: 2 / 3;
     grid-column: 1 / -1;  
 
-    align-self: center; 
-    justify-self: center;  
+    align-self: start;   
+    justify-self: center;   
+
     // background-color: black;  
 
     display: grid; 
     grid-template-rows: repeat(3, max-content);  
     grid-template-columns: max-content;     
 
+    transform: translateY(-1rem);   
 
     &__job-title {
         // background-color: black; 
@@ -115,29 +119,79 @@
         letter-spacing: 1.3rem;  
         font-weight: 500;        
     }    
-    
+     
     &__name {
         // background-color: blue; 
         grid-row: 2 / 3;  
         grid-column: 1 / -1; 
         font-size: 3.8rem; 
-        letter-spacing: 5.5rem;
+        letter-spacing: 5rem;   
+        padding-top: 1rem; 
+        padding-bottom: 1rem;
+
     } 
     
     &__company { 
-        font-size: 1rem;    
+        font-size: 1.1rem;
+        font-weight: 400;     
         letter-spacing: 2px; 
         // background-color: green;
         grid-row: 3 / 4;    
         grid-column: 1 / -1;     
         justify-self: end;      
-        margin-right: 5.5rem;   
-    }
+        margin-right: 5rem;      
+    } 
 }
 
 .footer {
-    // background-color: tomato;
+    // background-color: tomato; 
     grid-column: 1 / -1; 
+
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr) minmax(4rem, 14rem) repeat(2, 1fr);  
+}
+
+.video-select__prev-link,  
+.video-select__next-link {
+    
+    a { 
+        font-size: 1.4rem;  
+        font-style: italic;   
+        color: #fff;  
+        text-decoration: none; 
+    } 
+}
+
+
+.video-select__prev-link {
+    
+    justify-self: end; 
+    grid-column: 2 / 3; 
+
+    display: grid; 
+    grid-template-rows: repeat(2, min-content); 
+
+    &--num {
+        justify-self: end; 
+        letter-spacing: 2px;  
+    }
+     
+    &--text {
+
+    }
+    
+}
+
+.video-select__next-link {
+ 
+    grid-column: 4 / 5;  
+
+    display: grid; 
+    grid-template-rows: repeat(2, min-content); 
+
+    &--num {
+        letter-spacing: 2px;  
+    }
 }
 
 
