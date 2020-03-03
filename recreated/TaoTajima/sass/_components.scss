@@ -170,9 +170,9 @@
 
     display: grid; 
     grid-template-rows: repeat(2, min-content); 
+    justify-items: end;  
 
     &--num {
-        justify-self: end; 
         letter-spacing: 2px;  
     }
      
@@ -188,6 +188,7 @@
 
     display: grid; 
     grid-template-rows: repeat(2, min-content); 
+    justify-items: start;  
 
     &--num {
         letter-spacing: 2px;  
