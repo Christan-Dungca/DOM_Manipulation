@@ -1,13 +1,22 @@
 // container for all the elements on the page
-.keyboard-container {
+.container {
     width: 100%;
     height: 100vh;  
     
     background-color:  seashell;  
     
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center; 
+}
+
+// placeholder text 
+.text-box {
+
+    &__content {
+        font-size: 2rem;
+    }
 }
 
 // Dimension of the keyboard & container for the keys
@@ -54,6 +63,12 @@
         height: 4rem;
         border: 1px solid rgba(#000, .8);
         border-radius: 2rem; 
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: .8rem;
     }
 
     &--1 {

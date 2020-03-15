@@ -12,13 +12,17 @@ html {
 body {
   font-family: sans-serif; }
 
-.keyboard-container {
+.container {
   width: 100%;
   height: 100vh;
   background-color: seashell;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center; }
+
+.text-box__content {
+  font-size: 2rem; }
 
 .keyboard {
   width: 70rem;
@@ -49,4 +53,8 @@ body {
     width: 4rem;
     height: 4rem;
     border: 1px solid rgba(0, 0, 0, 0.8);
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem; }
