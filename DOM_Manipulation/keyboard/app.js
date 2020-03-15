@@ -4,6 +4,7 @@ const state = {
 }
 
 const DOM = {
+    'textBox' : document.querySelector('.text-box'),
     'symbol__weirdS' : document.querySelector('.symbol--§'),
     'num__1' : document.querySelector('.num--1'),
     'num__2' : document.querySelector('.num--2'),
@@ -17,59 +18,92 @@ const DOM = {
     'num__0' : document.querySelector('.num--0'),
     'symbol__minus' : document.querySelector('.symbol---'),
     'symbol__equal' : document.querySelector('.symbol--equal'),
-    'command__back' : document.querySelector('command--back'),
+    'command__back' : document.querySelector('.command--back'),
+}
+
+const changeText = () => {
+    DOM.textBox.innerHTML = '';
+
+    let newText = state.textBox.join(' ');
+    DOM.textBox.insertAdjacentHTML('beforeend', 
+    `<p classname="text-box__content">
+        ${newText}
+    </p> `);
 }
 
 const EventListeners = () => {
     
     DOM.symbol__weirdS.addEventListener('click', () => {
-        console.log('§');
+        state.textBox.push('§');
+        changeText();
     });
 
     DOM.num__1.addEventListener('click', () => {
-        console.log('1');
+        state.textBox.push('1');
+        changeText();
     });
 
     DOM.num__2.addEventListener('click', () => {
-        console.log('2');
+        state.textBox.push('2');
+        changeText();
     });
 
     DOM.num__3.addEventListener('click', () => {
-        console.log('3');
+        state.textBox.push('3');
+        changeText();
     });
 
     DOM.num__4.addEventListener('click', () => {
-        console.log('4');
+        state.textBox.push('4');
+        changeText();
     });
 
     DOM.num__5.addEventListener('click', () => {
-        console.log('5');
+        state.textBox.push('5');
+        changeText();
     });
 
     DOM.num__6.addEventListener('click', () => {
-        console.log('6');
+        state.textBox.push('6');
+        changeText();
     });
 
     DOM.num__7.addEventListener('click', () => {
-        console.log('7');
+        state.textBox.push('7');
+        changeText();
     });
 
     DOM.num__8.addEventListener('click', () => {
-        console.log('8');
+        state.textBox.push('8');
+        changeText();
     });
 
     DOM.num__9.addEventListener('click', () => {
-        console.log('9');
+        state.textBox.push('9');
+        changeText();
     });
     DOM.num__0.addEventListener('click', () => {
-        console.log('0');
+        state.textBox.push('0');
+        changeText();
     });
     DOM.symbol__minus.addEventListener('click', () => {
-        console.log('-');
+        state.textBox.push('-');
+        changeText();
     });
 
     DOM.symbol__equal.addEventListener('click', () => {
-        console.log('=');
+        state.textBox.push('=');
+        changeText();
+    });
+    
+    DOM.command__back.addEventListener('click', () => {
+        if(state.textBox.length > 0){
+            state.textBox.pop();
+            changeText();
+        } else {
+            state.textBox.push('start typing...')
+            changeText(); 
+        }
     });
 }
 

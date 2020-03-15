@@ -21,8 +21,8 @@
 
 // Dimension of the keyboard & container for the keys
 .keyboard { 
-    width: 70rem;
-    height: 32rem;     
+    width: 70rem;     
+    min-height: min-content;     
     border-radius: 2rem;  
     padding: 1rem; 
     
